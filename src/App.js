@@ -1,10 +1,9 @@
 import './App.css';
-import React from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import Home from './components/Home'
-import About from './components/About'
-import Users from './components/Users'
-import User from './components/User'
+import Home from './components/Home';
+import About from './components/About';
+import Users from './components/Users';
 
 function App() {
   return (
@@ -31,7 +30,6 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
             <Route path="/users" component={Users} />
-            <Route path="/user/:id" component={User} />
           </Switch>
         </div>
       </Router>
