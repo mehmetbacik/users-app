@@ -4,8 +4,10 @@
     --app-font: 'Montserrat', sans-serif;
     --font-size: 16px;
     --white: hsl(0deg 0% 100%);
+    --black: hsl(0deg 0% 5%);
     --nav-bg: hsl(210deg 27% 24%);
     --active-bg: hsl(209deg 27% 21%);
+    --anchor-hover: hsl(22deg 85% 66%);
 }
 
 body {
@@ -54,4 +56,58 @@ body {
 
 .App #users__app #users__app__home {
   text-align: center;
+}
+
+.App #users__app #users__app__about {
+  text-align: center;
+}
+
+.App #users__app #users__app__error {
+  text-align: center;
+}
+
+.App #users__app #users__app__userslist .title {
+  text-align: center;
+}
+
+.App #users__app #users__app__userslist .users__list {
+  display: flex;
+  align-items: center;
+}
+
+.App #users__app #users__app__userslist .users__list .users {
+  min-width: 50%;
+}
+
+.App #users__app #users__app__userslist .users__list .users ul li {
+  list-style-type: none;
+}
+
+.App #users__app #users__app__userslist .users__list .users ul li a {
+  font-size: 20px;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.App #users__app #users__app__userslist .users__list .users ul li a:hover {
+  color: var(--anchor-hover);
+}
+
+.App #users__app #users__app__userslist .users__list .users ul li a.active {
+  color: var(--anchor-hover);
+}
+
+.App #users__app #users__app__userslist .users__list .users ul li:nth-child(even) a::before {
+  content: url(/src/img/user-one.png);
+}
+
+.App #users__app #users__app__userslist .users__list .users ul li:nth-child(odd) a::before {
+  content: url(/src/img/user-two.png);
+}
+
+.App #users__app #users__app__userslist .users__list .users__detail {
+  min-width: 50%;
 }

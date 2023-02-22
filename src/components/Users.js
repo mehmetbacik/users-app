@@ -14,25 +14,32 @@ function Users() {
   }, []);
 
   return (
-    <div>
-        <h1>Users</h1>
+    <div id='users__app__userslist'>
+        <div className='title'>
+          <h1>Users</h1>
+        </div>
         {loading && <div>Loading...</div>}
-        <ul>
-          {
-            users.map((user) => (
-              <li key={user.id}>
-                <NavLink activeClassName='active' to={`${url}/${user.id}`}>{user.name}</NavLink>
-              </li>
-            ))
-          }
-        </ul>
-
-        <Switch>
-          <Route exact path={path}>
-            <h3>Please select a user.</h3>
-          </Route>
-          <Route path={`${path}/:id`} component={User} />
-        </Switch>
+        <div className='users__list'>
+          <div className='users'>
+            <ul>
+              {
+                users.map((user) => (
+                  <li key={user.id}>
+                    <NavLink activeClassName='active' to={`${url}/${user.id}`}>{user.name}</NavLink>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+          <div className='users__detail'>
+            <Switch>
+              <Route exact path={path}>
+                <h3>Please select a user.</h3>
+              </Route>
+              <Route path={`${path}/:id`} component={User} />
+            </Switch>
+          </div>
+        </div>
     </div>
   );
 }
