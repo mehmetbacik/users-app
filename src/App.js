@@ -10,14 +10,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div>
+        <div id='users__app'>
           <nav>
             <ul>
               <li>
-                <NavLink exact activeStyle={{backgroundColor: "red", color: "#fff"}} to="/">Home</NavLink>
+                <NavLink exact activeClassName="active" to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink activeStyle={{backgroundColor: "red", color: "#fff"}} to="/about">About</NavLink>
+                <NavLink activeClassName="active" to="/about">About</NavLink>
               </li>
               <li>
                 <NavLink activeClassName="active" to="/users">Users</NavLink>
