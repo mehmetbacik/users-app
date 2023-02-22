@@ -111,3 +111,34 @@ body {
 .App #users__app #users__app__userslist .users__list .users__detail {
   min-width: 50%;
 }
+
+.App #users__app #users__app__userslist #users__app__userdetail {
+  margin: 20px 50px;
+}
+
+.App #users__app #users__app__userslist #users__app__userdetail .headline {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.App #users__app #users__app__userslist #users__app__userdetail .detail {
+  margin-bottom: 20px;
+}
+
+.App #users__app #users__app__userslist #users__app__userdetail .next__button {
+  padding: 20px 0px;
+}
+
+.App #users__app #users__app__userslist #users__app__userdetail .next__button a {
+  background-color: var(--white);
+  border: solid 1px var(--nav-bg);
+  color: var(--black);
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.App #users__app #users__app__userslist #users__app__userdetail .next__button a:hover {
+  background-color: var(--nav-bg);
+  color: var(--white);
+}
