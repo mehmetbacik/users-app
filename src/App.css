@@ -29,6 +29,7 @@ body {
   justify-content: center;
   gap: 20px;
   padding-left: 0;
+  margin-top: 1rem;
 }
 
 .App #users__app nav ul li {
@@ -70,13 +71,8 @@ body {
   text-align: center;
 }
 
-.App #users__app #users__app__userslist .users__list {
-  display: flex;
-  align-items: center;
-}
-
-.App #users__app #users__app__userslist .users__list .users {
-  min-width: 50%;
+.App #users__app #users__app__userslist .users__list .users ul {
+  padding-left: 0;
 }
 
 .App #users__app #users__app__userslist .users__list .users ul li {
@@ -102,18 +98,12 @@ body {
 
 .App #users__app #users__app__userslist .users__list .users ul li:nth-child(even) a::before {
   content: url(/src/img/user-one.png);
+  line-height: normal;
 }
 
 .App #users__app #users__app__userslist .users__list .users ul li:nth-child(odd) a::before {
   content: url(/src/img/user-two.png);
-}
-
-.App #users__app #users__app__userslist .users__list .users__detail {
-  min-width: 50%;
-}
-
-.App #users__app #users__app__userslist #users__app__userdetail {
-  margin: 20px 50px;
+  line-height: normal;
 }
 
 .App #users__app #users__app__userslist #users__app__userdetail .headline {
